@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/livestatuserrorhandler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="lohitprojects.railwayapptestproject.Live_Train_Status">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight=".50"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/chocolateColor"
+            android:fontFamily="@font/asap"
+            android:text="Date"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight=".50"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/chocolateColor"
+            android:fontFamily="@font/asap"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trainName"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="@color/yellowColorTomatchchocolate"
+        android:fontFamily="@font/asap"
+        android:padding="10dp"
+        android:text="Train Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/delayedby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="@color/yellowColorTomatchchocolate"
+        android:fontFamily="@font/asap"
+        android:padding="10dp"
+        android:text="Status"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/trainStatusDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trainName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="@color/yellowColorTomatchchocolate"
+        android:fontFamily="@font/asap"
+        android:padding="10dp"
+        android:text="Live Status"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/trainNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trainStatusDisplay"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="@font/asap"
+        android:hint="Enter Train Number"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <Button
+        android:id="@+id/showResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trainNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="@color/greenselected"
+        android:fontFamily="@font/asap"
+        android:padding="10dp"
+        android:text="Show Live Status"
+        android:textColor="@android:color/background_light" />
+
+    <!-- view for AdMob Banner Ad -->
+    <TextView
+        android:id="@+id/noresulthandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/asap"
+        android:text="Result not found? Click here to check train running days"
+        android:textSize="12sp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>

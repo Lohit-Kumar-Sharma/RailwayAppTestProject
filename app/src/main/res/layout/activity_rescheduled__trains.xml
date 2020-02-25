@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="lohitprojects.railwayapptestproject.Rescheduled_Trains">
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_margin="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_edittext"
+
+        android:backgroundTint="@color/chocolateColor"
+        android:fontFamily="@font/asap"
+        android:padding="10dp"
+        android:text="Trains Rescheduled Today"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/todaysdate"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:fontFamily="@font/asap"
+            android:hint="DD-MM-YYYY"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttongetInfo"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/todaysdate"
+            android:layout_alignBottom="@+id/todaysdate"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/todaysdate"
+            android:layout_weight="1"
+
+            android:background="@drawable/rounded_edittext"
+
+            android:backgroundTint="@color/greenselected"
+            android:fontFamily="@font/asap"
+            android:padding="10dp"
+            android:text="Get Info"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listscheduledTrains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="@color/yellowColorTomatchchocolate"
+        android:padding="5dp"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
+
+    </ListView>
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+
+</RelativeLayout>

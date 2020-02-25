@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="lohitprojects.railwayapptestproject.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/chocolateColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/chocolateColor"
+            android:fontFamily="@font/asap"
+            android:padding="5dp"
+            android:text="About Me"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/asap"
+            android:longClickable="true"
+            android:padding="2dp"
+            android:text="Lohit Kumar"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asap"
+            android:longClickable="true"
+            android:padding="2dp"
+            android:text="FreeLancer developer"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asap"
+            android:longClickable="true"
+            android:padding="2dp"
+            android:text="Contact below for MINOR or MAJOR Projects on android"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asap"
+            android:longClickable="true"
+            android:padding="2dp"
+            android:text="Email - Developer.Lk1994@gmail.com"
+            android:textAlignment="center"
+
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="true" />
+
+    </LinearLayout>
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+
+</RelativeLayout>
